@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="container">
       <h1>App de inicio</h1>
     </main>
   )

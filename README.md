@@ -54,3 +54,7 @@ Se requiere el desarrollo de un sitio web responsivo para una tienda de ropa uti
 - Encargado de crear el repositorio principal en la plataforma de control de versiones (por ejemplo, GitHub).
 - Debe invitar a los demás miembros del equipo a colaborar en el repositorio mediante forks.
 - Debe asegurarse de que los cambios realizados por los estudiantes sean revisados y fusionados correctamente en el repositorio principal.
+
+# Recursos utilizados
+- [Agregar Bootstrap a Nextjs13](https://medium.com/frontendweb/how-to-add-bootstrap-in-next-js-de997371fd9c)
+- [Deploy de NextJS a DigitalOceanApps](https://docs.digitalocean.com/tutorials/app-nextjs-deploy/#creating-a-basic-nextjs-application)
