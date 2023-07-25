@@ -13,3 +13,8 @@ html {
 .layout main {
   flex-grow: 1;
 }
+
+.bgblur {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
