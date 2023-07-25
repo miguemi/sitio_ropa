@@ -1,12 +1,14 @@
 import CustomNavbar from "./components/header"
 import CustomFooter from "./components/footer"
 import Image from 'next/image'
+// imagenes
 import tech1 from './images/tech1.png'
 import tech2 from './images/tech2.png'
 import tech3 from './images/tech3.png'
+// ropa
+import camisa1 from './images/camisa1.png'
 
 export default function Home() {
-
   return (
     <div className="layout">
       <CustomNavbar/>
@@ -22,9 +24,9 @@ export default function Home() {
           <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        {/* carrousel */}
         <div className="container mt-3">
-          <div id="carouselExampleIndicators" className="carousel slide d-none d-sm-block">
+          {/* carrousel */}
+          <div id="carouselExampleIndicators" className="carousel slide">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -33,22 +35,18 @@ export default function Home() {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <Image src={tech1} 
-                  className="d-block w-100"
-                  width={1280}
-                  height={854}
+                  className="img-fluid d-block w-100"
                 />
               </div>
               <div className="carousel-item">
                 <Image src={tech2} 
-                  className="d-block w-100"
-                  width={1280}
-                  height={854}
+                  className="img-fluid d-block w-100"
                 />
               </div>
               <div className="carousel-item">
-                <Image src={tech3} className="d-block w-100"
-                  width={1280}
-                  height={854}
+                <Image 
+                  src={tech3} 
+                  className="img-fluid d-block w-100"
                 />
               </div>
             </div>
@@ -61,6 +59,67 @@ export default function Home() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
+
+          {/* apartado de productos */}
+          <div className="camisas my-3">
+            <div className="row row-cols-1 row-cols-md-2">
+              <div className="col mt-4">
+                <Image src={camisa1} 
+                  className="img-fluid mx-auto d-block"
+                />
+              </div>
+              <div className="col mt-4">
+                <Image src={camisa1} 
+                  className="img-fluid mx-auto d-block"
+                />
+              </div>
+              <div className="col mt-4">
+                <Image src={camisa1} 
+                  className="img-fluid mx-auto d-block"
+                />
+              </div>
+              <div className="col mt-4">
+                <Image src={camisa1} 
+                  className="img-fluid mx-auto d-block"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr className='my-5'/>
+
+          <form className="mb-5">
+            <h2 id='boletin'>Suscríbete a nuestro boletín</h2>
+            <div className="row row-cols-1 row-cols-md-2 mt-4 ">
+              {/* nombres y apellidos */}
+              <div className="col mb-3">
+                <label class="form-label">Nombres</label>
+                <input required class="form-control"/>
+              </div>
+              <div className="col mb-3">
+                <label class="form-label">Apellidos</label>
+                <input required class="form-control"/>
+              </div>
+
+              {/* telefono y correo */}
+              <div className="col mb-3">
+                <label class="form-label">Correo electronico</label>
+                <input required type="email" class="form-control"/>
+              </div>
+              <div className="col mb-3">
+                <label class="form-label">Número de telefono</label>
+                <input type="tel" class="form-control"/>
+              </div>
+            </div>
+
+            <div className="row mt-3">
+              <div className="col">
+                <button type="submit" class="btn btn-primary w-25">Enviar</button>
+              </div>
+            </div>
+          </form> 
+
+          {/* fin del container */}
         </div>
 
       </main>
