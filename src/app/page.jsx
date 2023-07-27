@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="container mt-3">
           {/* carrousel */}
-          <div id="carouselExampleIndicators" className="carousel slide">
+          <div id="carouselExampleIndicators" className="carousel slide"  data-bs-ride="carousel" data-bs-interval="2000">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -36,17 +36,20 @@ export default function Home() {
               <div className="carousel-item active">
                 <Image src={tech1} 
                   className="img-fluid d-block w-100"
+                  alt="carousel-image-1"
                 />
               </div>
               <div className="carousel-item">
                 <Image src={tech2} 
                   className="img-fluid d-block w-100"
+                  alt="carousel-image-2"
                 />
               </div>
               <div className="carousel-item">
                 <Image 
                   src={tech3} 
                   className="img-fluid d-block w-100"
+                  alt="carousel-image-3"
                 />
               </div>
             </div>
@@ -64,24 +67,24 @@ export default function Home() {
           <div className="camisas my-3">
             <div className="row row-cols-1 row-cols-md-2">
               <div className="col mt-4">
-                <Image src={camisa1} 
-                  className="img-fluid mx-auto d-block"
-                />
+                <a href="/catalogo/" className="hover-effect">
+                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
+                </a>
               </div>
               <div className="col mt-4">
-                <Image src={camisa1} 
-                  className="img-fluid mx-auto d-block"
-                />
+                <a href="/catalogo/" className="hover-effect">
+                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
+                </a>
               </div>
               <div className="col mt-4">
-                <Image src={camisa1} 
-                  className="img-fluid mx-auto d-block"
-                />
+                <a href="/catalogo/" className="hover-effect">
+                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
+                </a>
               </div>
               <div className="col mt-4">
-                <Image src={camisa1} 
-                  className="img-fluid mx-auto d-block"
-                />
+                <a href="/catalogo/" className="hover-effect">
+                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
+                </a>
               </div>
             </div>
           </div>
@@ -93,28 +96,28 @@ export default function Home() {
             <div className="row row-cols-1 row-cols-md-2 mt-4 ">
               {/* nombres y apellidos */}
               <div className="col mb-3">
-                <label class="form-label">Nombres</label>
-                <input required class="form-control"/>
+                <label className="form-label">Nombres</label>
+                <input required className="form-control"/>
               </div>
               <div className="col mb-3">
-                <label class="form-label">Apellidos</label>
-                <input required class="form-control"/>
+                <label className="form-label">Apellidos</label>
+                <input required className="form-control"/>
               </div>
 
               {/* telefono y correo */}
               <div className="col mb-3">
-                <label class="form-label">Correo electronico</label>
-                <input required type="email" class="form-control"/>
+                <label className="form-label">Correo electronico</label>
+                <input required type="email" className="form-control"/>
               </div>
               <div className="col mb-3">
-                <label class="form-label">Número de telefono</label>
-                <input type="tel" class="form-control"/>
+                <label className="form-label">Número de telefono</label>
+                <input type="tel" className="form-control"/>
               </div>
             </div>
 
             <div className="row mt-3">
               <div className="col">
-                <button type="submit" class="btn btn-primary w-25">Enviar</button>
+                <button type="submit" className="btn btn-primary w-25">Enviar</button>
               </div>
             </div>
           </form> 
