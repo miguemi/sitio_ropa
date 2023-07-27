@@ -73,7 +73,7 @@ export default function Catalogo(){
                       </p>
                     </a>
                     <p className="text-dark text-center mb-0">
-                      <small className="fst-italic">desde</small> <strong>{x.price.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
+                      <small className="">precio</small> <strong>{x.price.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
                     </p>
                   </div>
                 )
