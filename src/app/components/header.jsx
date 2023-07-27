@@ -11,24 +11,24 @@ export default function CustomNavbar(){
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link" href="/#boletin">
-                  <i class="bi bi-envelope-paper-fill"/> Boletin
+                  <i className="bi bi-envelope-paper-fill"/> Boletin
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/catalogo/">
-                  <i class="bi bi-box-fill"/> Catalogo
+                  <i className="bi bi-box-fill"/> Catalogo
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contacto/">
-                  <i class="bi bi-telephone-fill"/> Contacto
+                  <i className="bi bi-telephone-fill"/> Contacto
                 </a>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link" href="/carrito/">
-                  <i class="bi bi-bag-fill"/> Carrito
+                  <i className="bi bi-bag-fill"/> Carrito
                 </a>
               </li>
             </ul>
