@@ -8,32 +8,35 @@ export default function Carrito() {
         <CustomNavbar />
         <main>
           {/* aqui empezas a trabajar */}
-          <section>
-            <div class="h-100 d-flex align-items-center justify-content-center p-3 mb-2 bg-secondary text-white p-4 mb-2   ">
-              <h6>
+
+          <div className="container my-4">
+
+            <h2 className="mb-3">Cesta de la compra</h2>
+
+            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+              <p>
                 ¡Bienvenido a nuestra tienda de ropa en línea! Entregamos en
                 toda la República en 24-48 horas hábiles, después de validar el
                 pago con el banco emisor. Puede haber demoras en caso de
                 confirmación tardía o días festivos. ¡Compra con nosotros y luce
                 a la moda en poco tiempo!
-              </h6>
+              </p>
+              {/* <strong>Holy guacamole!</strong> You should check in on some of those fields below. */}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-          </section>
-
-          <div class="container cart__empty-cart-message ">
-              <h2>Cesta de la compra</h2>
           </div>
-          <section>
 
-            <div class="h-100 d-flex align-items-center justify-content-center  p-5 mb-2">
-              <h3>No hay articulos en tu carta</h3>
-            </div>
-          </section>
+
+          {/* no hay necesidad de agregar tantas clases, con un text-center lo podemos hacer. */}
           <section>
-            <div class="h-100 d-flex align-items-center justify-content-center    ">
-              <h3>Sobre nosotros</h3>
-            </div>
+            <h3 className="text-center">
+              No hay articulos en tu carrito de compra.
+            </h3>
           </section>
+
+          <a href="/catalogo/">
+            <h4 className="text-center">Seguir comprando</h4>
+          </a>
         </main>
         <CustomFooter />
       </div>
