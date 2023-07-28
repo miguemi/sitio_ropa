@@ -5,11 +5,12 @@ import CustomFooter from "../components/footer";
 import CustomNavbar from "../components/header";
 import products from "../util/items.js";
 import { notFound } from 'next/navigation';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 
 export default function Detalle() {
   const sParams = useSearchParams()
+  const router = useRouter()
   const producto = sParams.get('producto')
 
   if(!(producto in products)){
@@ -17,6 +18,11 @@ export default function Detalle() {
   }
 
   const prod = products[producto]
+  const goToCart = (e) => {
+    e.preventDefault()
+    alert('Producto agregado a tu carrito!')
+    router.push("/carrito/")
+  }
 
   return (
     <div className="layout">
@@ -29,6 +35,7 @@ export default function Detalle() {
               <Image 
                 src={prod.imagen} 
                 className="img-fluid mb-3 mb-md-0"
+                alt='producto'
               />
             </div>
             <div className="col">
@@ -40,7 +47,7 @@ export default function Detalle() {
                 <p><u>Detalles del producto</u></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque cumque obcaecati similique necessitatibus, consequatur mollitia sit quam consectetur eaque inventore saepe, maiores tempore voluptates dicta ut iste, cum possimus.</p>
               </div>
-              <form className='my-3'>
+              <form className='my-3' onSubmit={goToCart}>
                 <div className="mb-3">
                   <label className="form-label">Selecciona tu talla</label>
                   <select className="form-select">
