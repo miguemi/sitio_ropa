@@ -1,12 +1,16 @@
+'use client'
+
 import Image from 'next/image'
-import CustomFooter from "../../components/footer";
-import CustomNavbar from "../../components/header";
+import CustomFooter from "../components/footer";
+import CustomNavbar from "../components/header";
+import products from "../util/items.js";
 import { notFound } from 'next/navigation';
-import products from "../../util/items.js";
+import { useSearchParams } from 'next/navigation';
 
 
-export default function Detalle({params}) {
-  const {producto} = params
+export default function Detalle() {
+  const sParams = useSearchParams()
+  const producto = sParams.get('producto')
 
   if(!(producto in products)){
     notFound()
@@ -42,7 +46,7 @@ export default function Detalle({params}) {
                   <select className="form-select">
                     <option value="xs">XS</option>
                     <option value="s">S</option>
-                    <option value="m" selected>M</option>
+                    <option value="m" >M</option>
                     <option value="l">L</option>
                     <option value="xl">XL</option>
                   </select>
@@ -58,16 +62,15 @@ export default function Detalle({params}) {
                 </div>
                 <div className="mb-3">
                   <label className="form-label">Cantidad</label>
-                  <input type="number" class="form-control" required min={1} defaultValue={1}/>
+                  <input type="number" className="form-control" required min={1} defaultValue={1}/>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">
-                  <i class="bi bi-cart-plus-fill"/> Añadir al carrito
+                <button type="submit" className="btn btn-primary mt-3">
+                  <i className="bi bi-cart-plus-fill"/> Añadir al carrito
                 </button>
               </form>
             </div>
           </div>
         </div>
-
       </main>
       <CustomFooter />
     </div>

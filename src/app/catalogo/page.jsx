@@ -1,7 +1,6 @@
 import CustomNavbar from "../components/header"
 import CustomFooter from "../components/footer"
 import Image from 'next/image'
-
 import products from "../util/items"
 
 export default function Catalogo(){
@@ -27,19 +26,18 @@ export default function Catalogo(){
                         className="img-fluid mb-2"
                       />
                     </a>
-                    <a href={`/detalle/${x}/`} className="link-primary link-underline-opacity-0 link-underline-opacity-100-hover">
+                    <a href={`/detalles/?producto=${x}`} className="link-primary link-underline-opacity-0 link-underline-opacity-100-hover">
                       <p className="text-center mb-0">
                         {prod.nombre}
                       </p>
                     </a>
                     <p className="text-dark text-center mb-0">
-                      <small className="">precio</small> <strong>{prod.precio.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
+                      <small>precio</small> <strong>{prod.precio.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
                     </p>
                   </div>
                 )
               })
             }
-
           </div>
         </div>
       </main>

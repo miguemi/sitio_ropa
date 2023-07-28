@@ -74,7 +74,7 @@ export default function Home() {
                 randomProds.map(x => {
                   return (
                     <div className="col mt-4">
-                      <a href={`/detalle/${x}`} className="hover-effect">
+                      <a href={`/detalles/?producto=${x}`} className="hover-effect">
                         <Image src={products[x].imagen} className="img-fluid mx-auto d-block"/> 
                       </a>
                     </div>
