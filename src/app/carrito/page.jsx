@@ -13,7 +13,7 @@ export default function Carrito() {
 
             <h2 className="mb-3">Cesta de la compra</h2>
 
-            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <div className="alert alert-secondary alert-dismissible fade show" role="alert">
               <p>
                 ¡Bienvenido a nuestra tienda de ropa en línea! Entregamos en
                 toda la República en 24-48 horas hábiles, después de validar el
@@ -22,7 +22,7 @@ export default function Carrito() {
                 a la moda en poco tiempo!
               </p>
               {/* <strong>Holy guacamole!</strong> You should check in on some of those fields below. */}
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
           </div>
 

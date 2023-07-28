@@ -32,12 +32,12 @@ export default function Catalogo() {
               </p>
               <div className="mt-4 col-md-6">
                 <ul className="list-unstyled">
-                  <li><i class="bi bi-telephone"/> <strong>+502 5020-3090</strong></li>
-                  <li><i class="bi bi-whatsapp"/> <a href="wa.me/+50250203090" target="_blank" > WhatsApp </a></li>
+                  <li><i className="bi bi-telephone"/> <strong>+502 5020-3090</strong></li>
+                  <li><i className="bi bi-whatsapp"/> <a href="wa.me/+50250203090" target="_blank" > WhatsApp </a></li>
                   <li>
-                    <i class="bi bi-envelope"/> <a href="contacto@ma-store.com">contacto@ma-store.com</a>
+                    <i className="bi bi-envelope"/> <a href="contacto@ma-store.com">contacto@ma-store.com</a>
                   </li>
-                  <li><i class="bi bi-geo-alt"/> <strong>Centro Comercial Plaza Magdalena, Zona 5, Cobán, Guatemala Primer Nivel </strong></li>
+                  <li><i className="bi bi-geo-alt"/> <strong>Centro Comercial Plaza Magdalena, Zona 5, Cobán, Guatemala Primer Nivel </strong></li>
                 </ul>
                 <p className="fst-italic">Nuestra misión es servirte</p>
               </div>
