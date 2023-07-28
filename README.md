@@ -13,7 +13,7 @@ Se requiere el desarrollo de un sitio web responsivo para una tienda de ropa uti
 ### Catálogo de productos:
 * [X] Debe haber una página de catálogo que muestre todos los productos de la tienda.
 * [X] Los productos deben mostrarse en forma de cuadrícula con imágenes, título y precio.
-* [ ] Debe ser posible filtrar los productos por categoría (por ejemplo, hombres, mujeres, niños) utilizando botones de filtro.
+* [X] Debe ser posible filtrar los productos por categoría (por ejemplo, hombres, mujeres, niños) utilizando botones de filtro.
 
 ### Página de detalles del producto:
 * [X] Al hacer clic en un producto en el catálogo, se debe mostrar una página con los detalles completos del producto.

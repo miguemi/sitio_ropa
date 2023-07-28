@@ -13,10 +13,11 @@ import sweater2 from '../images/products/sweater2.png'
 
 
 class Producto {
-  constructor(nombre, precio, imagen) {
+  constructor(nombre, precio, imagen, categoria) {
     this.nombre = nombre
     this.precio = precio
     this.imagen = imagen
+    this.categoria = categoria
   }
 }
 
@@ -25,55 +26,64 @@ const products = {}
 products["j_pants_n"] = new Producto(
   "Jogger Pants Quality",
   150.0,
-  pants1
+  pants1,
+  "pantalones"
 )
 
 products['j_pants_s'] = new Producto(
   "Jogger Pants Soft",
   178.0,
-  pants2 
+  pants2,
+  "pantalones"
 )
 
 products['j_pants_s'] = new Producto(
   "Jogger Pants Expand",
   178.0,
-  pants3
+  pants3,
+  "pantalones"
 )
 
 products['s_shirt_cat'] = new Producto(
   "Chinese Cat Shirt",
   250.0,
-  shirt1
+  shirt1,
+  "playeras"
 )
 
 products['s_shirt_mock'] = new Producto(
   "Mockup ™️ Shirt",
   125.0,
-  shirt2
+  shirt2,
+  "playeras"
 )
 
 products['s_shirt_statue'] = new Producto(
   "Statue Shirt",
   75.0,
-  shirt3
+  shirt3,
+  "playeras"
 )
 
 products['s_shirt_lucky_cat'] = new Producto(
   "Lucky Cat Shirt",
   450.0,
-  shirt4
+  shirt4,
+  "playeras"
 )
 
 products['sweater_soft'] = new Producto(
   "Soft Sweater",
   125.0,
-  sweater1
+  sweater1,
+  "sueteres"
 )
 
 products['sweater_stripes'] = new Producto(
   "Stripes Sweater",
   500.0,
-  sweater2
+  sweater2,
+  "sueteres"
 )
 
 export default products
