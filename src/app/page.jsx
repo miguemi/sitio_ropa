@@ -5,10 +5,14 @@ import Image from 'next/image'
 import tech1 from './images/tech1.png'
 import tech2 from './images/tech2.png'
 import tech3 from './images/tech3.png'
-// ropa
-import camisa1 from './images/camisa1.png'
+// products
+import products from './util/items.js'
+
 
 export default function Home() {
+  let randomProds = Object.keys(products).slice().sort(() => Math.random() - 0.5);
+  randomProds = randomProds.slice(0, 4);
+
   return (
     <div className="layout">
       <CustomNavbar/>
@@ -66,26 +70,17 @@ export default function Home() {
           {/* apartado de productos */}
           <div className="camisas my-3">
             <div className="row row-cols-1 row-cols-md-2">
-              <div className="col mt-4">
-                <a href="/catalogo/" className="hover-effect">
-                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
-                </a>
-              </div>
-              <div className="col mt-4">
-                <a href="/catalogo/" className="hover-effect">
-                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
-                </a>
-              </div>
-              <div className="col mt-4">
-                <a href="/catalogo/" className="hover-effect">
-                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
-                </a>
-              </div>
-              <div className="col mt-4">
-                <a href="/catalogo/" className="hover-effect">
-                  <Image src={camisa1} className="img-fluid mx-auto d-block" />
-                </a>
-              </div>
+              {
+                randomProds.map(x => {
+                  return (
+                    <div className="col mt-4">
+                      <a href={`/detalle/${x}`} className="hover-effect">
+                        <Image src={products[x].imagen} className="img-fluid mx-auto d-block"/> 
+                      </a>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
 

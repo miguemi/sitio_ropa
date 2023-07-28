@@ -1,54 +1,12 @@
 import CustomNavbar from "../components/header"
 import CustomFooter from "../components/footer"
 import Image from 'next/image'
-import tech1 from '../images/camisa1.png'
+
+import products from "../util/items"
 
 export default function Catalogo(){
 
-  const prods = [
-    {
-      name: "producto1",
-      price: 90,
-    },
-    {
-      name: "producto 2",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    },
-    {
-      name: "producto1",
-      price: 90
-    }
-  ]
-
-
+  const prods = Object.keys(products)
 
   return (
     <div className="layout">
@@ -59,21 +17,23 @@ export default function Catalogo(){
           <div className="row row-cols-2 row-cols-md-4">
             {
               prods.map(x => {
+                const prod = products[x]
+
                 return (
                   <div className="col my-4">
                     <a href="/carrito/" className="hover-effect" data-bs-toggle="tooltip" data-bs-placement="top" title="Agregar al carrito!">
                       <Image 
-                        src={tech1} 
+                        src={prod.imagen} 
                         className="img-fluid mb-2"
                       />
                     </a>
-                    <a href="#" className="link-primary link-underline-opacity-0 link-underline-opacity-100-hover">
+                    <a href={`/detalle/${x}/`} className="link-primary link-underline-opacity-0 link-underline-opacity-100-hover">
                       <p className="text-center mb-0">
-                        {x.name}
+                        {prod.nombre}
                       </p>
                     </a>
                     <p className="text-dark text-center mb-0">
-                      <small className="fst-italic">desde</small> <strong>{x.price.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
+                      <small className="">precio</small> <strong>{prod.precio.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 })} </strong> GTQ
                     </p>
                   </div>
                 )

@@ -11,14 +11,14 @@ Se requiere el desarrollo de un sitio web responsivo para una tienda de ropa uti
 * [X] Debe incluir un formulario de suscripción para que los visitantes se suscriban al boletín de noticias.
 
 ### Catálogo de productos:
-* [ ] Debe haber una página de catálogo que muestre todos los productos de la tienda.
-* [ ] Los productos deben mostrarse en forma de cuadrícula con imágenes, título y precio.
+* [X] Debe haber una página de catálogo que muestre todos los productos de la tienda.
+* [X] Los productos deben mostrarse en forma de cuadrícula con imágenes, título y precio.
 * [ ] Debe ser posible filtrar los productos por categoría (por ejemplo, hombres, mujeres, niños) utilizando botones de filtro.
 
 ### Página de detalles del producto:
-* [ ] Al hacer clic en un producto en el catálogo, se debe mostrar una página con los detalles completos del producto.
-* [ ] Debe incluir una imagen grande del producto, título, descripción, precio y opciones de compra (por ejemplo, selección de talla y color).
-* [ ] Debe haber un botón para agregar el producto al carrito de compras.
+* [X] Al hacer clic en un producto en el catálogo, se debe mostrar una página con los detalles completos del producto.
+* [X] Debe incluir una imagen grande del producto, título, descripción, precio y opciones de compra (por ejemplo, selección de talla y color).
+* [X] Debe haber un botón para agregar el producto al carrito de compras.
 
 ### Carrito de compras:
 * [X] Maquetado inicial del carrito de compras.
@@ -36,25 +36,25 @@ Se requiere el desarrollo de un sitio web responsivo para una tienda de ropa uti
 ## Roles y tareas sugeridas
 
 ### Diseñador de interfaz:
-- Encargado de diseñar las páginas del sitio web utilizando los componentes y estilos proporcionados por Bootstrap.
-- Debe asegurarse de que el diseño sea atractivo, coherente y responsivo en diferentes dispositivos.
+* Encargado de diseñar las páginas del sitio web utilizando los componentes y estilos proporcionados por Bootstrap.
+* Debe asegurarse de que el diseño sea atractivo, coherente y responsivo en diferentes dispositivos.
 
 ### Desarrollador FrontEnd:
-- Encargado de implementar el diseño en código utilizando HTML, CSS y Bootstrap.
-- Debe asegurarse de que el sitio web sea responsivo y se vea correctamente en dispositivos móviles, tabletas y escritorios.
-- Debe agregar interacciones y funcionalidades utilizando JavaScript (opcional).
+* Encargado de implementar el diseño en código utilizando HTML, CSS y Bootstrap.
+* Debe asegurarse de que el sitio web sea responsivo y se vea correctamente en dispositivos móviles, tabletas y escritorios.
+* Debe agregar interacciones y funcionalidades utilizando JavaScript (opcional).
 
 ### Desarrollador back-end:
-- Encargado de implementar la lógica del carrito de compras y la integración con el formulario de envío y pago.
-- Puede utilizar tecnologías como PHP, Python o cualquier otro lenguaje de programación de su elección.
-- Debe asegurarse de que los datos ingresados por el usuario sean procesados y almacenados correctamente.
+* Encargado de implementar la lógica del carrito de compras y la integración con el formulario de envío y pago.
+* Puede utilizar tecnologías como PHP, Python o cualquier otro lenguaje de programación de su elección.
+* Debe asegurarse de que los datos ingresados por el usuario sean procesados y almacenados correctamente.
 
 ### Administrador de Git
-- Encargado de crear el repositorio principal en la plataforma de control de versiones (por ejemplo, GitHub).
-- Debe invitar a los demás miembros del equipo a colaborar en el repositorio mediante forks.
-- Debe asegurarse de que los cambios realizados por los estudiantes sean revisados y fusionados correctamente en el repositorio principal.
+* Encargado de crear el repositorio principal en la plataforma de control de versiones (por ejemplo, GitHub).
+* Debe invitar a los demás miembros del equipo a colaborar en el repositorio mediante forks.
+* Debe asegurarse de que los cambios realizados por los estudiantes sean revisados y fusionados correctamente en el repositorio principal.
 
 # Recursos utilizados
-- [Agregar Bootstrap a Nextjs13](https://medium.com/frontendweb/how-to-add-bootstrap-in-next-js-de997371fd9c)
-- [Agregar Bootstrap icons a NextJS13](https://dhanar98.medium.com/how-to-add-bootstrap-icons-in-next-js-c691a21e7e4c)
-- [Deploy de NextJS a DigitalOceanApps](https://docs.digitalocean.com/tutorials/app-nextjs-deploy/#creating-a-basic-nextjs-application)
+* [Agregar Bootstrap a Nextjs13](https://medium.com/frontendweb/how-to-add-bootstrap-in-next-js-de997371fd9c)
+* [Agregar Bootstrap icons a NextJS13](https://dhanar98.medium.com/how-to-add-bootstrap-icons-in-next-js-c691a21e7e4c)
+* [Deploy de NextJS a DigitalOceanApps](https://docs.digitalocean.com/tutorials/app-nextjs-deploy/#creating-a-basic-nextjs-application)
